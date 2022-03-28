@@ -1,13 +1,13 @@
 * {
-    font-family: Arial, serif;
+  font-family: Arial, serif;
 }
 
 .container {
-    width: 900px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .btn {
@@ -16,18 +16,22 @@
   display: flex;
   flex-direction: column;
   font-family: Arial, serif;
-  font-size: 30px;
+  font-size: 25px;
   border: 1px solid rgb(179, 179, 179);
   border-radius: 10px;
   transition: All 0.3s;
   box-shadow: 0 0 5px #ececec;
-
-
+  min-width: 150px;
+}
+@media (max-width: 900px) {
+  .btn {
+    margin-bottom: 20px;
+  }
 }
 
 .music-ins span {
-    color: rgb(189, 189, 189);
-    font-size: 20px;
+  color: rgb(189, 189, 189);
+  font-size: 20px;
 }
 
 .buttons {
@@ -35,9 +39,23 @@
   margin-bottom: 20px;
 }
 
+@media (max-width: 900px) {
+  .buttons {
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
 h1 {
-  margin-bottom: 40px;
   margin-top: 40px;
+  margin-bottom: 0;
+}
+
+h2 {
+  opacity: 0.6;
+  margin-bottom: 40px;
+  margin-top: 10px;
 }
 
 .playing {
