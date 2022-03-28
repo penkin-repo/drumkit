@@ -1,12 +1,33 @@
+* {
+    font-family: Arial, serif;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .btn {
-  width: 50px;
-  height: 50px;
+  padding: 10px;
   margin-right: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  font-family: Arial, serif;
   font-size: 30px;
-  font-weight: bold;
+  border: 1px solid rgb(179, 179, 179);
+  border-radius: 10px;
+  transition: All 0.3s;
+  box-shadow: 0 0 5px #ececec;
+
+
+}
+
+.music-ins span {
+    color: rgb(189, 189, 189);
+    font-size: 20px;
 }
 
 .buttons {
@@ -17,4 +38,10 @@
 h1 {
   margin-bottom: 40px;
   margin-top: 40px;
+}
+
+.playing {
+  background-color: #a9c0ff;
+  transform: scale(0.95);
+  box-shadow: none;
 }
