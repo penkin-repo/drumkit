@@ -22,43 +22,78 @@
       <h1>Drum Kit Bachata</h1>
       <h2>5 basic instruments in bachata</h2>
       <div class="buttons">
-        <div class="btn btn-outline-secondary">
+        <div class="btn btn-outline-secondary" data-key="82">
           <div class="music-ins">
-            Requinto <i class="fa-solid fa-guitar"></i> <span>(R)</span>
+            Requinto<span>R</span>
           </div>
         </div>
         <div class="btn btn-outline-secondary" data-key="71">
           <div class="music-ins">
-            Guira <i class="fa-solid fa-circle-play"></i> <span>(G)</span>
+            <p>Guiro</p><span>G</span>
+          </div>
+        </div>
+        <div class="btn btn-outline-secondary" data-key="79">
+          <div class="music-ins">
+            Bongo<span>O</span>
+          </div>
+        </div>
+        <div class="btn btn-outline-secondary" data-key="66">
+          <div class="music-ins">
+            Bass<span>B</span>
           </div>
         </div>
         <div class="btn btn-outline-secondary">
           <div class="music-ins">
-            Bongo <i class="fa-solid fa-drum"></i> <span>(O)</span>
-          </div>
-        </div>
-        <div class="btn btn-outline-secondary">
-          <div class="music-ins">
-            Bass <i class="fa-solid fa-guitar"></i> <span>(B)</span>
-          </div>
-        </div>
-        <div class="btn btn-outline-secondary">
-          <div class="music-ins">
-            Segunda <i class="fa-solid fa-guitar"></i> <span>(S)</span>
+            Segunda<span>S</span>
           </div>
         </div>
       </div>
-      <div class="image"><img src="/drumkit/img/ND8krEdcZw4.jpg" alt="" /></div>
+      <!-- <div class="image"><img src="/drumkit/img/ND8krEdcZw4.jpg" alt="" /></div> -->
 
+      <!-- instruments -->
+      <div class="inst">
+        <div class="inst__item">
+          <div class="item__img">
+            <img src="/drumkit/img/req.jpg" alt="">
+          </div>
+          <div class="item__label">Requinto</div>
+        </div>
+        <div class="inst__item">
+          <div class="item__img">
+            <img src="/drumkit/img/guiro.jpg" alt="">
+          </div>
+          <div class="item__label">Guiro</div>
+        </div>
+        <div class="inst__item">
+          <div class="item__img">
+            <img src="/drumkit/img/bongo.jpg" alt="">
+          </div>
+          <div class="item__label">Bongo</div>
+        </div>
+        <div class="inst__item">
+          <div class="item__img">
+            <img src="/drumkit/img/bass.jpg" alt="">
+          </div>
+          <div class="item__label">Bass</div>
+        </div>
+        <div class="inst__item">
+          <div class="item__img">
+            <img src="/drumkit/img/segunda.jpg" alt="">
+          </div>
+          <div class="item__label">Segunda</div>
+        </div>
+        
+        
+      </div>
       <h2>Справка</h2>
     </div>
 
     <!-- SOUND -->
 
-    <audio
-      data-key="71"
-      src="/drumkit/sound/Sound_22678_Guiro_Shake_85_BPM.ogg"
-    ></audio>
+    <audio data-key="71" src="/drumkit/sound/guira.mp3"></audio>
+    <audio data-key="82" src="/drumkit/sound/req.mp3"></audio>
+    <audio data-key="79" src="/drumkit/sound/bongo.mp3"></audio>
+    <audio data-key="66" src="/drumkit/sound/bass.mp3"></audio>
 
     <!-- SCRIPTS -->
     <script src="/drumkit/js/strict.js"></script>
