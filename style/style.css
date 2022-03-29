@@ -123,7 +123,11 @@ h2 span {
   border: 1px solid rgb(199, 199, 199);
   border-radius: 10px;
 }
-.item__img {
-}
+
 .item__label {
+  padding: 5px;
+}
+.playing-inst {
+  padding: 5px;
+  border-bottom: 5px solid rgb(195, 204, 255);
 }

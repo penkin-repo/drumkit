@@ -13,14 +13,17 @@ playSound = (e) => {
 
   const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
   const key = document.querySelector(`.btn[data-key="${e.keyCode}"]`);
+  const label = document.querySelector(`.item__label[data-key="${e.keyCode}"]`);
   if (!audio) return;
 
   if (audio.duration > 0 && !audio.paused) {
     audio.pause();
     audio.currentTime = 0;
+    label.classList.remove('playing-inst');
   } else {
     audio.currentTime = 0;
     audio.play();
+    label.classList.add('playing-inst');
   }
 
   key.classList.add("playing");
