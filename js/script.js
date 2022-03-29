@@ -9,15 +9,22 @@ playSound = (e) => {
     return;
   }
 
-//   play instrument
+  //   play instrument
+
   const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
   const key = document.querySelector(`.btn[data-key="${e.keyCode}"]`);
   if (!audio) return;
-  audio.currentTime = 0;
-  audio.play();
+
+  if (audio.duration > 0 && !audio.paused) {
+    audio.pause();
+    audio.currentTime = 0;
+  } else {
+    audio.currentTime = 0;
+    audio.play();
+  }
+
   key.classList.add("playing");
 };
-
 
 //remove transition
 function removeTransition(e) {
@@ -29,6 +36,5 @@ const keys = document.querySelectorAll(".btn");
 keys.forEach((key) => {
   key.addEventListener("transitionend", removeTransition);
 });
-
 
 window.addEventListener("keydown", playSound);
