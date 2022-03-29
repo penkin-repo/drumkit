@@ -1,4 +1,4 @@
-playSound = () => {
+playSound = (e) => {
   // all sounds stop
   if (e.keyCode === 81) {
     const allAudio = document.querySelectorAll("audio");
